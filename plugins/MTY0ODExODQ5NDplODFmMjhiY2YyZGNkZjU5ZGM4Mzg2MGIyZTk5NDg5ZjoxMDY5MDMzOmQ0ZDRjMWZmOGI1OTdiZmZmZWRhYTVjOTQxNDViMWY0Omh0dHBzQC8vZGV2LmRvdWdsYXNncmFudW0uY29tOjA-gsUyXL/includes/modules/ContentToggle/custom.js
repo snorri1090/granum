@@ -1,0 +1,1 @@
+jQuery(function(t){t(".dmpro-toggle-btn .dmpro-input").each(function(){var n=t(this).parents(".dmpro-content-toggle").find(".dmpro-content-toggle-back"),e=t(this).parents(".dmpro-content-toggle").find(".dmpro-content-toggle-front");this.checked?(e.hide(),n.show()):(n.hide(),e.show()),t(this).on("change",function(){this.checked?(e.hide(),n.show()):(n.hide(),e.show())})})});

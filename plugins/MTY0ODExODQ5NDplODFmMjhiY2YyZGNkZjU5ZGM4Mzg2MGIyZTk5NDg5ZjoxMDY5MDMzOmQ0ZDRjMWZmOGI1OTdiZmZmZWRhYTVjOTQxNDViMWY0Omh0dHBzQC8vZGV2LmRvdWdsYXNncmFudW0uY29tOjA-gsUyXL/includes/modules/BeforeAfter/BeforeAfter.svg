@@ -1,0 +1,29 @@
+<svg width="35" height="50" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 3.75C14 3.33579 13.6642 3 13.25 3H5C2.23858 3 0 5.23858 0 8V42C0 44.7614 2.23858 47 5 47H13.25C13.6642 47 14 46.6642 14 46.25V46.25C14 45.8358 13.6642 45.5 13.25 45.5H5C3.067 45.5 1.5 43.933 1.5 42V8C1.5 6.067 3.067 4.5 5 4.5H13.25C13.6642 4.5 14 4.16421 14 3.75V3.75Z" fill="white"/>
+<rect x="16" width="1.5" height="50" rx="0.75" fill="white"/>
+<circle cx="20.75" cy="3.75" r="0.75" fill="white"/>
+<circle r="0.75" transform="matrix(1 0 0 -1 20.75 46.25)" fill="white"/>
+<circle cx="26.75" cy="3.75" r="0.75" fill="white"/>
+<circle r="0.75" transform="matrix(1 0 0 -1 26.75 46.25)" fill="white"/>
+<circle cx="23.75" cy="3.75" r="0.75" fill="white"/>
+<circle r="0.75" transform="matrix(1 0 0 -1 23.75 46.25)" fill="white"/>
+<circle cx="29.75" cy="3.75" r="0.75" fill="white"/>
+<circle r="0.75" transform="matrix(1 0 0 -1 29.75 46.25)" fill="white"/>
+<circle cx="32.75" cy="4.75" r="0.75" fill="white"/>
+<circle r="0.75" transform="matrix(1 0 0 -1 32.75 45.75)" fill="white"/>
+<circle cx="33.75" cy="6.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="9.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="12.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="15.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="18.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="21.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="24.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="27.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="30.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="33.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="37.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="40.75" r="0.75" fill="white"/>
+<circle cx="33.75" cy="43.75" r="0.75" fill="white"/>
+<path d="M13.0002 30.925C13.3002 30.625 13.3002 30.125 13.0002 29.825L7.80015 24.825L13.1002 19.325C13.4002 19.025 13.4002 18.525 13.1002 18.225C12.8002 17.925 12.3002 17.925 12.0002 18.225L6.30015 24.025C5.90015 24.425 5.90015 25.025 6.30015 25.425L11.9002 30.825C12.2002 31.225 12.7002 31.225 13.0002 30.925Z" fill="white"/>
+<path d="M20.325 30.925C20.025 30.625 20.025 30.125 20.325 29.825L25.525 24.825L20.225 19.325C19.925 19.025 19.925 18.525 20.225 18.225C20.525 17.925 21.025 17.925 21.325 18.225L27.025 24.025C27.425 24.425 27.425 25.025 27.025 25.425L21.425 30.825C21.125 31.225 20.625 31.225 20.325 30.925Z" fill="white"/>
+</svg>

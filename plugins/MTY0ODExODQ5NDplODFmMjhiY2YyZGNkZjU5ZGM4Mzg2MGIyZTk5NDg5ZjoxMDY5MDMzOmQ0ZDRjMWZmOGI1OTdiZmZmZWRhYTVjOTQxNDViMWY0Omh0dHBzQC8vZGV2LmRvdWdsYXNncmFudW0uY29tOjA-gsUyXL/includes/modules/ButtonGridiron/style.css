@@ -1,0 +1,7 @@
+.dmpro-button-grid-container {
+    display: flex;
+}
+.dmpro_button_grid>div,
+.dmpro_button_grid .dmpro-button-grid-container {
+    height: 100%;
+}

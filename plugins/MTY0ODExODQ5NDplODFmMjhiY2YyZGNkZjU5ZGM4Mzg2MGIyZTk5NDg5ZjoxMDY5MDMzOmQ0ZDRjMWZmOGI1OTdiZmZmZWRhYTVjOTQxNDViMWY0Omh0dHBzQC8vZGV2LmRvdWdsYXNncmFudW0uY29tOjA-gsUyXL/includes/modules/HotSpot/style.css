@@ -1,0 +1,23 @@
+.dmpro-image-hotspot > img {
+    width: 100%;
+    display: block;
+}
+
+@media all and (max-width: 767px){
+    .dmpro-image-hotspot {
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    .dmpro_image_hotspot_child .dmpro-tooltip-wrap.dmpro-tooltip-wrap {
+        max-width: calc(100vw - 20px);
+        position: fixed;
+        transform: translateY(-40%) translateX(-50%);
+        margin: 0;
+        left: 50%;
+    }
+}

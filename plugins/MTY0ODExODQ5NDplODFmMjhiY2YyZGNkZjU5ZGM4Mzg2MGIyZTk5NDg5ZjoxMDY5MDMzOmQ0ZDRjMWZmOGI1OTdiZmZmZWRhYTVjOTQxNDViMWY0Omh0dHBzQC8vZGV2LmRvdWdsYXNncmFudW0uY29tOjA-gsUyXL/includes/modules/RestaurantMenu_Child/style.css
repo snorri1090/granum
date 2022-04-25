@@ -1,0 +1,22 @@
+.dmpro_price_list_item .dmpro_price_list_item_wrapper {
+    display: flex;
+}
+
+.dmpro_price_list_item .dmpro_price_list_text_wrapper {
+    padding: 2%;
+    flex: 1;
+}
+
+.dmpro_price_list_item .dmpro_price_list_header {
+    display: flex;
+}
+
+.dmpro_price_list_item .dmpro_price_list_separator {
+    flex: 1;
+}
+
+.dmpro_price_list_item .dmpro_price_list_image_wrapper img {
+    display: block;
+    width: 100%;
+    border-style: solid;
+}

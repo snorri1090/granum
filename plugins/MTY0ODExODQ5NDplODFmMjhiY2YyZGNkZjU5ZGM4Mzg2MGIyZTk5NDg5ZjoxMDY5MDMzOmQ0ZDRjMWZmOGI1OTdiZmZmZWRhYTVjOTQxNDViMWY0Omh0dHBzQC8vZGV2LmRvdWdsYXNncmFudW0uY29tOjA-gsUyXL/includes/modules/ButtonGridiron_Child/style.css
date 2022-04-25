@@ -1,0 +1,14 @@
+.dmpro_button_grid_child .dmpro-button-wrap:hover,
+.dmpro_button_grid_child .dmpro-button-wrap {
+    transition: all .3s ease 0ms !important;
+}
+
+body #page-container .dmpro_button_grid_child .dmpro-button-wrap:after,
+body #page-container .dmpro_button_grid_child .dmpro-button-wrap:before {
+    line-height: inherit;
+    font-size: inherit !important;
+}
+
+.dmpro_button_grid .dmpro_button_grid_child {
+    margin-bottom: 0;
+}

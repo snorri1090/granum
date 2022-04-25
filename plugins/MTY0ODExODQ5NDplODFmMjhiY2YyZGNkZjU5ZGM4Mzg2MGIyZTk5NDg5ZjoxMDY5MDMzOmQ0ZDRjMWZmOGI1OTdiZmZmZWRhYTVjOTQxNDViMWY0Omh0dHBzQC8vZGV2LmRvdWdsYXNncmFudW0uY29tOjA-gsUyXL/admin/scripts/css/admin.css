@@ -1,0 +1,13 @@
+.et-db #et-boc .et-fb-modules-list ul>li[class^="dmpro_"] {
+    background-image:linear-gradient(to right, #7a43d0 0%, #f4887d 100%);  /* fallback for old browsers */
+    color:#ffffff;
+    text-align:center;
+    
+}
+.et-db #et-boc .et-fb-modules-list ul>li[class^="dmpro_"] .et-fb-icon {
+    height:60px !important;
+}
+
+.et-db #et-boc .et-fb-modules-list ul>li[class^="dmpro_"] span {
+    font-size:10px;
+}
