@@ -13,7 +13,7 @@ jobs:
     
     - name: Sync
       env:
-        dest: 'ssh-user@example.com:/mydir/wp-content'
+        dest: 'ssh-user@example.com:/home/douglbv3/public_html/staging/9063/wp-content'
       run: |
         echo "${{secrets.DEPLOY_KEY}}" > deploy_key
         chmod 600 ./deploy_key
