@@ -13,10 +13,11 @@ jobs:
     
     - name: Sync
       env:
-        dest: 'ssh-user@example.com:/home/douglbv3/public_html/staging/9063/wp-content'
+        dest: 'douglbv3@162.241.224.20:/home/douglbv3/public_html/staging/9063/wp-content'
       run: |
         echo "${{secrets.DEPLOY_KEY}}" > deploy_key
-        chmod 600 ./deploy_key
+        chmod 400 ./deploy_key
+        ssh-add ./deploy_key
         rsync -chav --delete \
           -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \
           --exclude /deploy_key \
