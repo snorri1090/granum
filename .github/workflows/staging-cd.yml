@@ -15,7 +15,7 @@ jobs:
       env:
         dest: 'douglbv3@162.241.224.20:/home/douglbv3/public_html/staging/9063/wp-content'
       run: |
-        cat "${{secrets.DEPLOY_KEY}}" >> deploy_key
+        echo "${{secrets.DEPLOY_KEY}}" > deploy_key
         chmod 400 ./deploy_key
         ssh-add ./deploy_key
         rsync -chav --delete \
