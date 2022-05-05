@@ -38,10 +38,10 @@ body {
 
 .page-template-page-template-blank-php #page-container {
 	background-color: #fff;
-    background-image: url('/wp-content/uploads/2022/04/granum_soft_launch_block_cropped.png');
+    /* background-image: url('/wp-content/uploads/2022/04/granum_soft_launch_block_cropped.png');
     background-position: top 80px left 100px;
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: 300px; */
 }
 
 .et_pb_section,
