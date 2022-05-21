@@ -492,7 +492,12 @@ Magazine Layout
 	margin-top: 0;
 }
 
-.page-section .page-row .et_pb_column .section-header {
+.et_pb_row .et_pb_column.et-last-child
+
+.et_pb_gutters3 .et_pb_column_1_3 .et_pb_module,
+
+.page-section .page-row .et_pb_column .section-header,
+.et_pb_column .et_pb_module.section-header {
 	margin-bottom: 0;
 }
 
@@ -541,7 +546,7 @@ Magazine Layout
 }
 
 .blog-list .et_pb_post {
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 .blog-list.sidebar h2.entry-title {
@@ -560,6 +565,10 @@ Magazine Layout
     padding: 0;
 }
 
+.content-theme-row .slider .et_pb_slider_container_inner {
+    vertical-align: bottom;
+}
+
 .theme-slider {}
 
 .theme-gallery .et_pb_gallery_image {padding-top: 100%}
@@ -571,11 +580,20 @@ Magazine Layout
   object-fit: cover;
 }
 
+
 /* Main Menu */
 #section-masthead ul li a {
 	color: rgba(0,0,0,.6) !important;
 	text-transform: uppercase;
 }
+
+
+/* Art News */
+.page-row.art-news .et_pb_main_blurb_image {
+    height: 200px;
+    overflow: hidden;
+}
+
 
 /* Creative Partners Label */
 
@@ -585,6 +603,38 @@ Magazine Layout
 	color: #fff;
 	background-color: #C53B31;
 	padding: 5px;
+}
+
+/*******************************
+
+Smart Quote
+
+*******************************/
+
+.fav-quotes {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25em;
+}
+
+.fav-quotes .smart-quote {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.fav-quotes .smart-quote.open {
+    margin-bottom: -.2em;
+    margin-right: 2em;
+}
+
+.fav-quotes .smart-quote.close {
+    margin-bottom: .2em;
+    margin-left: 2em;
+}
+
+.fav-quotes .quote-text .credit {
+    font-size: 0.8em;
+    font-style: italic;
 }
 
 /*******************************
@@ -680,6 +730,15 @@ article .et_post_meta_wrapper img {
 .article-sig {
     font-size: .8em;
     font-style: italic;
+}
+
+/* Hide comment count on post headers */
+
+.entry-meta .comment,
+.entry-meta .cat-links,
+.entry-meta .tag-links,
+.post-meta .comments-number {
+ display: none;
 }
 
 
@@ -828,7 +887,14 @@ Responsive for small mobile devices
         background-color: #fff;
     }
     
-    #global-footer p {
+    #global-footer p,
+    #global-footer .et_pb_column,
+    #global-footer .et_pb_column .et_pb_text_inner {
+        text-align: center;
+    }
+    
+    #global-footer .social-media-links {
+        display: block;
         text-align: center;
     }
 }
