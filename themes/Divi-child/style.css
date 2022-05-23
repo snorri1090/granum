@@ -204,6 +204,12 @@ margin-right: 1em;
 	color: #000;
 }
 
+.issue-date {
+	font-family: Playfair, serif;
+	font-size: .7em;
+	color: rgba(0, 0, 0, .7)
+}
+
 /*******************************************
 Magazine Masthead
 *******************************************/
