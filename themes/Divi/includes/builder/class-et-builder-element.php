@@ -2995,6 +2995,8 @@ class ET_Builder_Element {
 			$content = '';
 		}
 
+		$this->_original_content = et_pb_fix_shortcodes( $content, $this->use_raw_content );
+
 		if ( $et_fb_processing_shortcode_object ) {
 			$this->content = et_pb_fix_shortcodes( $content, $this->use_raw_content );
 		} else {
@@ -14531,12 +14533,14 @@ class ET_Builder_Element {
 		$mask_selector       = $this->add_suffix_to_selectors( ' > .et_pb_background_mask', $css_element );
 		$css_element_pattern = ! empty( $settings['css']['pattern'] ) ? $settings['css']['pattern'] : $pattern_selector;
 		$css_element_mask    = ! empty( $settings['css']['mask'] ) ? $settings['css']['mask'] : $mask_selector;
+		$css_element_hover   = ! empty( $settings['css']['hover'] ) ? $settings['css']['hover'] : '';
 		$args                = array(
 			'base_prop_name'                => $base_prop_name,
 			'props'                         => $this->props,
 			'selector'                      => $css_element,
 			'selector_pattern'              => $css_element_pattern,
 			'selector_mask'                 => $css_element_mask,
+			'selector_hover'                => $css_element_hover,
 			'function_name'                 => $function_name,
 			'fields_definition'             => $this->fields_unprocessed,
 			'important'                     => isset( $settings['css']['important'] ) && $settings['css']['important'] ? ' !important' : '',
@@ -14739,6 +14743,17 @@ class ET_Builder_Element {
 				} elseif ( $overflow_y ) {
 					$overflow = 'overflow-x';
 				}
+
+				/**
+				 * Filters if overflow should be set along with border radius.
+				 *
+				 * @param bool|string        $overflow      If overflow is enabled (true) or disabled (false) or -x or -y.
+				 * @param string             $function_name Module slug (e.g. et_pb_section).
+				 * @param ET_Builder_Element $this          Module object.
+				 *
+				 * @since ??
+				 */
+				$overflow = apply_filters( 'et_builder_process_advanced_borders_options_radii_overflow_enabled', $overflow, $function_name, $this );
 
 				// Render border radii for all devices.
 				foreach ( et_pb_responsive_options()->get_modes() as $device ) {
@@ -20357,8 +20372,7 @@ class ET_Builder_Element {
 		$background_video_class_hover  = 'et_pb_section_video_bg_hover';
 
 		// Hover and Responsive Status.
-		$hover_enabled        = self::$_->array_get( $this->props, "{$base_name}__hover_enabled", 'off' );
-		$is_background_hover  = 'on' === $hover_enabled;
+		$is_background_hover  = et_pb_hover_options()->is_enabled( $base_name, $this->props );
 		$is_background_mobile = et_pb_responsive_options()->is_responsive_enabled( $this->props, $base_name );
 
 		if ( ! empty( $args ) ) {
@@ -22270,6 +22284,20 @@ class ET_Builder_Element {
 		}
 
 		return false;
+	}
+
+	/**
+	 * Public access provider for self::contains().
+	 *
+	 * @since ??
+	 *
+	 * @param string   $content Element content.
+	 * @param string[] $module_slugs Module slug to search.
+	 *
+	 * @return bool
+	 */
+	public static function module_contains( $content, $module_slugs ) {
+		return self::contains( $content, $module_slugs );
 	}
 
 	/**

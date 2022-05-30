@@ -23,6 +23,8 @@ final class ET_Core_Updates {
 	private static $_this;
 
 	function __construct( $core_url, $product_version ) {
+		global $wp_version;
+
 		// Don't allow more than one instance of the class
 		if ( isset( self::$_this ) ) {
 			wp_die( sprintf( esc_html__( '%s: You cannot create a second instance of this class.', 'et-core' ),
@@ -49,7 +51,13 @@ final class ET_Core_Updates {
 
 		add_filter( 'wp_prepare_themes_for_js', array( $this, 'replace_theme_update_notification' ) );
 		add_filter( 'upgrader_package_options', array( $this, 'check_upgrading_product' ) );
-		add_filter( 'upgrader_pre_download', array( $this, 'update_error_message' ), 20, 4 );
+
+		// The 4th paramenter, $hook_extra was added in WordPress 5.5.0.
+		if ( version_compare( $wp_version, '5.5.0', '>=' ) ) {
+			add_filter( 'upgrader_pre_download', array( $this, 'update_error_message' ), 20, 4 );
+		} else {
+			add_filter( 'upgrader_pre_download', array( $this, 'update_error_message' ), 20, 3 );
+		}
 
 		add_filter( 'pre_set_site_transient_update_plugins', array( $this, 'check_plugins_updates' ) );
 		add_filter( 'plugins_api', array( $this, 'maybe_modify_plugins_changelog' ), 20, 3 );
@@ -174,7 +182,7 @@ final class ET_Core_Updates {
 		return $themes_array;
 	}
 
-	function update_error_message( $reply, $package, $upgrader, $hook_extra ) {
+	function update_error_message( $reply, $package, $upgrader, $hook_extra = array() ) {
 		if ( ! $this->upgrading_et_product ) {
 			return $reply;
 		}
@@ -397,6 +405,15 @@ final class ET_Core_Updates {
 		}
 
 		foreach ( $_plugins as $file => $plugin ) {
+			$update_uri = isset( $plugin['UpdateURI'] ) ? $plugin['UpdateURI'] : '';
+			$is_et_uri  = false !== strpos( $update_uri, 'elegantthemes.com' );
+
+			// Continue to the next iteration if the Update URI 
+			// is not empty and not using Elegant Themes's domain.
+			if ( ! empty( $update_uri ) && ! $is_et_uri ) {
+				continue;
+			}
+
 			$plugins[ $file ] = $plugin['Version'];
 		}
 

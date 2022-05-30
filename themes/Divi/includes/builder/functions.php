@@ -8,7 +8,7 @@
 
 if ( ! defined( 'ET_BUILDER_PRODUCT_VERSION' ) ) {
 	// Note, this will be updated automatically during grunt release task.
-	define( 'ET_BUILDER_PRODUCT_VERSION', '4.17.3' );
+	define( 'ET_BUILDER_PRODUCT_VERSION', '4.17.4' );
 }
 
 if ( ! defined( 'ET_BUILDER_VERSION' ) ) {
@@ -13270,3 +13270,23 @@ function et_builder_get_global_color_info( $color_id ) {
 
 	return $colors[ $color_id ];
 }
+
+/**
+ * Checks if overflow CSS property should be set or not.
+ *
+ * @since 4.17.4
+ *
+ * @param bool|string        $overflow_enabled If overflow is enabled (true) or disabled (false) or -x or -y.
+ * @param string             $function_name    Module slug.
+ * @param ET_Builder_Element $module           Module object.
+ *
+ * @return bool|string
+ */
+function et_process_border_radii_options_overflow( $overflow_enabled, $function_name, $module ) {
+	if ( in_array( $function_name, [ 'et_pb_section', 'et_pb_row' ], true ) &&
+		ET_Builder_Element::module_contains( $module->_original_content, [ 'et_pb_menu', 'et_pb_fullwidth_menu' ] ) ) {
+		$overflow_enabled = false;
+	}
+	return $overflow_enabled;
+}
+add_filter( 'et_builder_process_advanced_borders_options_radii_overflow_enabled', 'et_process_border_radii_options_overflow', 10, 3 );

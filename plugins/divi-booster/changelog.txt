@@ -1,3 +1,10 @@
+= 3.8.6 =
+* Improves to the licensing system
+
+= 3.8.5 =
+* Implemented licensing system
+* Minimum required PHP version now 5.3
+
 = 3.8.4 =
 * Fixed slider "run once" option not working when continue on hover enabled
 

@@ -141,7 +141,7 @@ class ET_Builder_Library {
 	 */
 	protected static function _get_image_size_name( $type ) {
 		$names = array(
-			'thumbnail'       => 'et-pb-portfolio-image',
+			'thumbnail'       => 'full',
 			'thumbnail_small' => 'et-pb-portfolio-image',
 			'screenshot'      => 'et-pb-portfolio-image-single',
 		);
@@ -454,7 +454,7 @@ class ET_Builder_Library {
 	 *
 	 * @return array $data
 	 */
-	public function builder_library_layouts_data( $library_type ) {
+	public function builder_library_layouts_data( $library_type = 'layout' ) {
 		$layout_categories = array();
 		$layout_packs      = array();
 		$layout_tags       = array();
@@ -536,8 +536,9 @@ class ET_Builder_Library {
 			$layout->slug = $post->post_name;
 			$layout->url  = esc_url( wp_make_link_relative( get_permalink( $post ) ) );
 
-			$layout->thumbnail       = esc_url( get_the_post_thumbnail_url( $post->ID, 'full' ) );
+			$layout->thumbnail       = esc_url( get_the_post_thumbnail_url( $post->ID, $thumbnail ) );
 			$layout->thumbnail_small = esc_url( get_the_post_thumbnail_url( $post->ID, $thumbnail_small ) );
+			$layout->screenshot      = esc_url( get_the_post_thumbnail_url( $post->ID, $screenshot ) );
 
 			$layout->is_global    = $this->layouts->is_global( $layout->id );
 			$layout->is_favorite  = $this->layouts->is_favorite( $layout->id );
