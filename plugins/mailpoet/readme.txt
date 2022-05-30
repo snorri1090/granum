@@ -3,7 +3,7 @@ Contributors: mailpoet
 Tags: email, email marketing, post notification, woocommerce emails, email automation, newsletter, newsletter builder, newsletter subscribers
 Requires at least: 5.6
 Tested up to: 5.9
-Stable tag: 3.87.2
+Stable tag: 3.89.3
 Requires PHP: 7.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -107,11 +107,14 @@ Please note:
 **Official translations**
 
 * Arabic
+* Catalan
 * Chinese
+* Czech
 * Danish
 * Dutch
 * French (FR)
 * German
+* Greek
 * Italian
 * Japanese
 * Mexican
@@ -127,9 +130,7 @@ Please note:
 
 * Albanian
 * British
-* Catalan
 * French (CA)
-* Greek
 * Hebrew
 * Hungarian
 * Norwegian
@@ -217,6 +218,48 @@ Check our [Knowledge Base](https://kb.mailpoet.com) or contact us through our [s
 6. WooCommerce emails
 
 == Changelog ==
+
+= 3.89.3 - 2022-05-24 =
+* Added: Google reCAPTCHA v2 Invisible;
+* Improved: auto adjust the height of form's iframe;
+* Changed: mailpoet_mailer_smtp_transport_agent filter replaced with mailpoet_mailer_smtp_option;
+* Changed: replaced Swift Mailer with PHPMailer.
+
+= 3.89.2 - 2022-05-19 =
+* Fixed: form editor not opening in some cases.
+
+= 3.89.1 - 2022-05-17 =
+* Improved: performance fixes;
+* Improved: error handling when using MailPoet Sending Service;
+* Changed: removed deprecated code;
+* Changed: automatic emails can no longer be activated without an unsubscribe link when sending with MSS;
+* Fixed: remove unnecessary redirect that in some circumstances prevented displaying a form;
+* Fixed: users added via MemberPress now receive welcome emails targeted to custom roles.
+
+= 3.89.0 - 2022-05-09 =
+* Updated: Removed MailPoet Task Scheduler;
+* Improved: faster page load;
+* Improved: compatibility with WooCommerce Blocks 7.2;
+* Improved: tested with WordPress 6;
+* Fixed: TypeError when calculating lifetime emails takes longer than usual.
+
+= 3.88.2 - 2022-05-03 =
+* Improved: show error message when trying to send confirmation email with signup confirmation disabled;
+* Changed: minimum PHP version bumped to 7.2.5;
+* Fixed: blank page when importing a template;
+* Fixed: drafts and future posts can't be included in newsletter.
+
+= 3.88.1 - 2022-04-28 =
+* Fixed: Abandoned Cart Email cannot be edited.
+
+= 3.88.0 - 2022-04-25 =
+* Added: new official translations Catalan, Czech and Greek;
+* Fixed: email batches containing invalid addresses lost by MSS.
+
+= 3.87.2 - 2022-04-19 =
+* Added: description of 3rd party libraries usage;
+* Fixed: "none of" condition for "MailPoet custom field" segment doesn't work;
+* Fixed: block toolbar in form editor is not visible for top block.
 
 = 3.87.1 - 2022-04-14 =
 * Improved: minor changes and fixes.

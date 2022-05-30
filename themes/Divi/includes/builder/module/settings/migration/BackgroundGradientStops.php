@@ -241,6 +241,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_stops' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_stops_1'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_2'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_3'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 
 			// Tablet View.
 			'background_color_gradient_stops_tablet'     => array(
@@ -261,6 +276,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 			'button_two_bg_color_gradient_stops_tablet'  => array(
 				'affected_fields' => array(
 					'button_two_bg_color_gradient_stops_tablet' => $this->get_modules( 'fw_header_button_bg' ),
+				),
+			),
+			'background_color_gradient_stops_tablet_1'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_tablet_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_tablet_2'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_tablet_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_tablet_3'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_tablet_3' => $this->get_modules( 'module_bg' ),
 				),
 			),
 
@@ -285,6 +315,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_stops_phone' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_stops_phone_1'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_phone_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_phone_2'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_phone_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops_phone_3'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops_phone_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 
 			// Hover Mode.
 			'background_color_gradient_stops__hover'     => array(
@@ -307,6 +352,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_stops__hover' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_stops__hover_1'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__hover_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops__hover_2'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__hover_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops__hover_3'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__hover_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 
 			// Sticky Mode.
 			'background_color_gradient_stops__sticky'    => array(
@@ -327,6 +387,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 			'button_two_bg_color_gradient_stops__sticky' => array(
 				'affected_fields' => array(
 					'button_two_bg_color_gradient_stops__sticky' => $this->get_modules( 'fw_header_button_bg' ),
+				),
+			),
+			'background_color_gradient_stops__sticky_1'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__sticky_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops__sticky_2'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__sticky_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_stops__sticky_3'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_stops__sticky_3' => $this->get_modules( 'module_bg' ),
 				),
 			),
 		);
@@ -354,6 +429,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_type' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_type_1'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_2'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_3'          => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 
 			// Tablet View.
 			'background_color_gradient_type_tablet'     => array(
@@ -374,6 +464,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 			'button_two_bg_color_gradient_type_tablet'  => array(
 				'affected_fields' => array(
 					'button_two_bg_color_gradient_type_tablet' => $this->get_modules( 'fw_header_button_bg' ),
+				),
+			),
+			'background_color_gradient_type_tablet_1'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_tablet_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_tablet_2'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_tablet_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_tablet_3'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_tablet_3' => $this->get_modules( 'module_bg' ),
 				),
 			),
 
@@ -398,6 +503,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_type_phone' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_type_phone_1'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_phone_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_phone_2'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_phone_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type_phone_3'    => array(
+				'affected_fields' => array(
+					'background_color_gradient_type_phone_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 
 			// Hover Mode.
 			'background_color_gradient_type__hover'     => array(
@@ -418,6 +538,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 			'button_two_bg_color_gradient_type__hover'  => array(
 				'affected_fields' => array(
 					'button_two_bg_color_gradient_type__hover' => $this->get_modules( 'fw_header_button_bg' ),
+				),
+			),
+			'background_color_gradient_type__hover_1'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__hover_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type__hover_2'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__hover_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type__hover_3'   => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__hover_3' => $this->get_modules( 'module_bg' ),
 				),
 			),
 
@@ -442,6 +577,21 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					'button_two_bg_color_gradient_type__sticky' => $this->get_modules( 'fw_header_button_bg' ),
 				),
 			),
+			'background_color_gradient_type__sticky_1'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__sticky_1' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type__sticky_2'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__sticky_2' => $this->get_modules( 'module_bg' ),
+				),
+			),
+			'background_color_gradient_type__sticky_3'  => array(
+				'affected_fields' => array(
+					'background_color_gradient_type__sticky_3' => $this->get_modules( 'module_bg' ),
+				),
+			),
 		);
 
 		return array_merge( $gradient_stops_fields, $gradient_type_fields );
@@ -461,30 +611,45 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 			'button_bg_color_gradient_type',
 			'button_one_bg_color_gradient_type',
 			'button_two_bg_color_gradient_type',
+			'background_color_gradient_type_1',
+			'background_color_gradient_type_2',
+			'background_color_gradient_type_3',
 
 			// Tablet View.
 			'background_color_gradient_type_tablet',
 			'button_bg_color_gradient_type_tablet',
 			'button_one_bg_color_gradient_type_tablet',
 			'button_two_bg_color_gradient_type_tablet',
+			'background_color_gradient_type_tablet_1',
+			'background_color_gradient_type_tablet_2',
+			'background_color_gradient_type_tablet_3',
 
 			// Phone View.
 			'background_color_gradient_type_phone',
 			'button_bg_color_gradient_type_phone',
 			'button_one_bg_color_gradient_type_phone',
 			'button_two_bg_color_gradient_type_phone',
+			'background_color_gradient_type_phone_1',
+			'background_color_gradient_type_phone_2',
+			'background_color_gradient_type_phone_3',
 
 			// Hover Mode.
 			'background_color_gradient_type__hover',
 			'button_bg_color_gradient_type__hover',
 			'button_one_bg_color_gradient_type__hover',
 			'button_two_bg_color_gradient_type__hover',
+			'background_color_gradient_type__hover_1',
+			'background_color_gradient_type__hover_2',
+			'background_color_gradient_type__hover_3',
 
 			// Sticky Mode.
 			'background_color_gradient_type__sticky',
 			'button_bg_color_gradient_type__sticky',
 			'button_one_bg_color_gradient_type__sticky',
 			'button_two_bg_color_gradient_type__sticky',
+			'background_color_gradient_type__sticky_1',
+			'background_color_gradient_type__sticky_2',
+			'background_color_gradient_type__sticky_3',
 		);
 	}
 
@@ -653,6 +818,48 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					$old_values['end_position'] = $attrs['button_two_bg_color_gradient_end_position'];
 				}
 				break;
+			case 'background_color_gradient_stops_1':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_1', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_1'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_1', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_1'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_1', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_1'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_1', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_1'];
+				}
+				break;
+			case 'background_color_gradient_stops_2':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_2', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_2'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_2', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_2'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_2', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_2'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_2', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_2'];
+				}
+				break;
+			case 'background_color_gradient_stops_3':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_3', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_3'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_3', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_3'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_3', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_3'];
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_3', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_3'];
+				}
+				break;
 
 			// Tablet View.
 			// If tablet view settings are not found, check for desktop view settings and inherit (if found).
@@ -757,6 +964,84 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					$old_values['end_position'] = $attrs['button_two_bg_color_gradient_end_position_tablet'];
 				} elseif ( self::existsAndIsNotEmpty( 'button_two_bg_color_gradient_end_position', $attrs ) ) {
 					$old_values['end_position']   = $attrs['button_two_bg_color_gradient_end_position'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops_tablet_1':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_1', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_tablet_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_1', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_1'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_1', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_tablet_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_1', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_1'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_1', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_tablet_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_1', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_1'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_1', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_tablet_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_1', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_1'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops_tablet_2':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_2', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_tablet_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_2', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_2'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_2', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_tablet_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_2', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_2'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_2', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_tablet_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_2', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_2'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_2', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_tablet_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_2', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_2'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops_tablet_3':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_3', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_tablet_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_3', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_3'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_3', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_tablet_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_3', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_3'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_3', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_tablet_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_3', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_3'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_3', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_tablet_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_3', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_3'];
 					$is_inherited['end_position'] = true;
 				}
 				break;
@@ -916,6 +1201,120 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					$is_inherited['end_position'] = true;
 				}
 				break;
+			case 'background_color_gradient_stops_phone_1':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_phone_1', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_phone_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_1', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_tablet_1'];
+					$is_inherited['start_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_1', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_1'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_phone_1', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_phone_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_1', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_tablet_1'];
+					$is_inherited['start_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_1', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_1'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_phone_1', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_phone_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_1', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_tablet_1'];
+					$is_inherited['end_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_1', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_1'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_phone_1', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_phone_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_1', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_tablet_1'];
+					$is_inherited['end_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_1', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_1'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops_phone_2':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_phone_2', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_phone_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_2', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_tablet_2'];
+					$is_inherited['start_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_2', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_2'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_phone_2', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_phone_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_2', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_tablet_2'];
+					$is_inherited['start_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_2', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_2'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_phone_2', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_phone_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_2', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_tablet_2'];
+					$is_inherited['end_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_2', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_2'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_phone_2', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_phone_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_2', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_tablet_2'];
+					$is_inherited['end_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_2', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_2'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops_phone_3':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_phone_3', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start_phone_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_tablet_3', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_tablet_3'];
+					$is_inherited['start_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_3', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_3'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_phone_3', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position_phone_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_tablet_3', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_tablet_3'];
+					$is_inherited['start_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_3', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_3'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_phone_3', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end_phone_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_tablet_3', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_tablet_3'];
+					$is_inherited['end_color'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_3', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_3'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_phone_3', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position_phone_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_tablet_3', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_tablet_3'];
+					$is_inherited['end_position'] = true;
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_3', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_3'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
 
 			// Hover Mode.
 			// If hover view settings are not found, check for desktop view settings and inherit (if found).
@@ -1023,6 +1422,84 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					$is_inherited['end_position'] = true;
 				}
 				break;
+			case 'background_color_gradient_stops__hover_1':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__hover_1', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__hover_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_1', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_1'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__hover_1', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__hover_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_1', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_1'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__hover_1', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__hover_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_1', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_1'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__hover_1', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__hover_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_1', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_1'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops__hover_2':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__hover_2', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__hover_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_2', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_2'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__hover_2', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__hover_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_2', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_2'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__hover_2', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__hover_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_2', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_2'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__hover_2', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__hover_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_2', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_2'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops__hover_3':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__hover_3', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__hover_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_3', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_3'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__hover_3', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__hover_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_3', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_3'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__hover_3', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__hover_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_3', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_3'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__hover_3', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__hover_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_3', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_3'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
 
 			// Sticky Mode.
 			// If sticky view settings are not found, check for desktop view settings and inherit (if found).
@@ -1127,6 +1604,84 @@ class ET_Builder_Module_Settings_Migration_BackgroundGradientStops extends ET_Bu
 					$old_values['end_position'] = $attrs['button_two_bg_color_gradient_end_position__sticky'];
 				} elseif ( self::existsAndIsNotEmpty( 'button_two_bg_color_gradient_end_position', $attrs ) ) {
 					$old_values['end_position']   = $attrs['button_two_bg_color_gradient_end_position'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops__sticky_1':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__sticky_1', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__sticky_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_1', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_1'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__sticky_1', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__sticky_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_1', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_1'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__sticky_1', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__sticky_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_1', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_1'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__sticky_1', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__sticky_1'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_1', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_1'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops__sticky_2':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__sticky_2', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__sticky_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_2', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_2'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__sticky_2', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__sticky_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_2', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_2'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__sticky_2', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__sticky_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_2', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_2'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__sticky_2', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__sticky_2'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_2', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_2'];
+					$is_inherited['end_position'] = true;
+				}
+				break;
+			case 'background_color_gradient_stops__sticky_3':
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start__sticky_3', $attrs ) ) {
+					$old_values['start_color'] = $attrs['background_color_gradient_start__sticky_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_3', $attrs ) ) {
+					$old_values['start_color']   = $attrs['background_color_gradient_start_3'];
+					$is_inherited['start_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position__sticky_3', $attrs ) ) {
+					$old_values['start_position'] = $attrs['background_color_gradient_start_position__sticky_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_start_position_3', $attrs ) ) {
+					$old_values['start_position']   = $attrs['background_color_gradient_start_position_3'];
+					$is_inherited['start_position'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end__sticky_3', $attrs ) ) {
+					$old_values['end_color'] = $attrs['background_color_gradient_end__sticky_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_3', $attrs ) ) {
+					$old_values['end_color']   = $attrs['background_color_gradient_end_3'];
+					$is_inherited['end_color'] = true;
+				}
+				if ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position__sticky_3', $attrs ) ) {
+					$old_values['end_position'] = $attrs['background_color_gradient_end_position__sticky_3'];
+				} elseif ( self::existsAndIsNotEmpty( 'background_color_gradient_end_position_3', $attrs ) ) {
+					$old_values['end_position']   = $attrs['background_color_gradient_end_position_3'];
 					$is_inherited['end_position'] = true;
 				}
 				break;
