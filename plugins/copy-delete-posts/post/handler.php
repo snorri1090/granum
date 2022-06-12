@@ -549,10 +549,35 @@ function cdp_insert_new_post($areWePro = false) {
             $new = wp_insert_post($data, true);
 
             // Check if the post is inserted successfully and append array
-            if (is_numeric($new))
-                array_push($results['ids'], $new);
-            else
-                $results['error'] ++;
+            if (is_numeric($new)) {
+
+              array_push($results['ids'], $new);
+
+              // SeedProd Premium CSS files
+              $uploadsDir = wp_upload_dir()['basedir'];
+              $oldCssFile = $uploadsDir . '/seedprod-css/style-' . $id . '.css';
+              $newCssFile = $uploadsDir . '/seedprod-css/style-' . $new . '.css';
+
+              if (file_exists($oldCssFile) && is_file($oldCssFile)) {
+                @copy($oldCssFile, $newCssFile);
+              }
+
+              // Elementor cached CSS
+              $oldCssFile = $uploadsDir . '/elementor/css/post-' . $id . '.css';
+              $newCssFile = $uploadsDir . '/elementor/css/post-' . $new . '.css';
+              if (file_exists($oldCssFile) && is_file($oldCssFile)) {
+                $customCssContent = file_get_contents($oldCssFile);
+                $customCssContent = str_replace('-' . $id, '-' . $new, $customCssContent);
+                file_put_contents($newCssFile, $customCssContent);
+                unset($customCssContent);
+              }
+
+            } else {
+
+              $results['error']++;
+
+            }
+
         }
 
         // Handle multisite for premium fix
@@ -857,7 +882,7 @@ function cdp_insert_new_post($areWePro = false) {
     }
 
     // Run the machine for selected post(s)
-    $g = get_option('_cdp_globals', false);
+    $g = get_option('_cdp_globals', array());
     $new_insertions = cdp_process_ids($ids, $swap, $settings, $times, $site, $areWePro, $g);
 
     // Handle multisite for premium
@@ -887,18 +912,15 @@ function cdp_insert_new_post($areWePro = false) {
     $copyTimePerOne = $copyTime / $times;
 
     // Set only if had good performance all the time
-    $isSlowPerf = true;
+    $isSlowPerf = false;
     if (get_option('cdp_latest_slow_performance', false) == false) {
       $isSlowPerf = false;
     }
 
-    // Check if the copy time of one page was slower than 0.030 of second
-    if ($copyTimePerOne > 0.030) {
+    // Check if the copy time of one page was slower than 0.035 of second
+    if ($copyTimePerOne > 0.035) {
       $isSlowPerf = true;
     }
-
-    // Set the performance status
-    update_option('cdp_latest_slow_performance', $isSlowPerf);
 
     // Update history with logs
     $logs = get_option('cdp_copy_logs_times', array());
@@ -906,6 +928,14 @@ function cdp_insert_new_post($areWePro = false) {
       $logs = array_slice($logs, 0, 48);
     }
     $logs = array_values($logs);
+
+    if (sizeof($logs) < 2) {
+      $isSlowPerf = false;
+    }
+
+    // Set the performance status
+    update_option('cdp_latest_slow_performance', $isSlowPerf);
+
     array_unshift($logs, array('amount' => $times, 'time' => $copyTime, 'perOne' => $copyTimePerOne, 'data' => time(), 'memory' => memory_get_usage(), 'peak' => memory_get_peak_usage(true)));
     update_option('cdp_copy_logs_times', $logs);
 

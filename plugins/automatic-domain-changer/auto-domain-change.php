@@ -4,7 +4,7 @@ Plugin Name: Automatic Domain Changer
 Plugin URI: http://www.nuagelab.com/wordpress-plugins/auto-domain-change
 Description: Automatically changes the domain of a WordPress blog
 Author: NuageLab <wordpress-plugins@nuagelab.com>
-Version: 2.0.2
+Version: 2.0.3
 License: GPLv2 or later
 Author URI: http://www.nuagelab.com/wordpress-plugins
 */
@@ -127,7 +127,7 @@ class auto_domain_change{
 			echo '<div class="update-nag">
 				' . sprintf( __( 'The domain name of your WordPress blog appears to have changed! <a href="%1$s">Click here to update your config</a> or <a href="%2$s">dismiss</a>.', 'auto-domain-change' ),
 					'/wp-admin/tools.php?page=' . basename( __FILE__ ),
-					add_query_arg( 'dismiss-domain-change', '1' )
+					esc_url(add_query_arg( 'dismiss-domain-change', '1' ))
 				) . '
 			</div>';
 		}
@@ -247,8 +247,8 @@ class auto_domain_change{
 		echo '<br>';
 		echo '<p class="backup">';
 		echo '<button class="adc-backup-button" data-type="sql">'.__('Backup database as SQL','auto-domain-change').'</button>';
-		//echo '&nbsp;';
-		//echo '<button class="adc-backup-button" data-type="php">'.__('Backup database as PHP','auto-domain-change').'</button>';
+		echo '&nbsp;';
+		echo '<button class="adc-backup-button" data-type="php">'.__('Backup database as PHP','auto-domain-change').'</button>';
 		echo '</p>';
 		echo '</td>';
 		//echo '<td colspan="2"><input type="checkbox" name="accept-terms" id="accept-terms" value="1" /> <label for="accept-terms"'.($error_terms?' style="color:red;font-weight:bold;"':'').'>'.__('I have <a id="adc-backup-button" href="">backed up my database</a> and will assume the responsability of any data loss or corruption.','auto-domain-change').'</label></td>';

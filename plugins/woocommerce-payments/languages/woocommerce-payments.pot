@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WooCommerce Payments package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Payments 4.2.0\n"
+"Project-Id-Version: WooCommerce Payments 4.2.1\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/woocommerce-payments\n"
-"POT-Creation-Date: 2022-05-26 07:54:23+00:00\n"
+"POT-Creation-Date: 2022-06-06 15:26:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -203,7 +203,7 @@ msgid "Payment capture failed to complete with the following message: %s"
 msgstr ""
 
 #: includes/admin/class-wc-rest-payments-orders-controller.php:172
-#: includes/class-wc-payment-gateway-wcpay.php:2581
+#: includes/class-wc-payment-gateway-wcpay.php:2587
 msgid "Unknown error"
 msgstr ""
 
@@ -651,7 +651,7 @@ msgid ""
 msgstr ""
 
 #: includes/class-wc-payment-gateway-wcpay.php:915
-#: includes/class-wc-payment-gateway-wcpay.php:2311
+#: includes/class-wc-payment-gateway-wcpay.php:2317
 #: includes/payment-methods/class-upe-payment-gateway.php:164
 #: includes/payment-methods/class-upe-payment-gateway.php:239
 #: includes/payment-methods/class-upe-payment-gateway.php:428
@@ -740,7 +740,7 @@ msgid ""
 "Reason: %2$s. (<code>%3$s</code>)"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:1653
+#: includes/class-wc-payment-gateway-wcpay.php:1659
 #: dist/settings.js:1
 #: client/settings/general-settings/index.js:42
 msgid ""
@@ -748,50 +748,50 @@ msgid ""
 "is only available to live accounts."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:1658
+#: includes/class-wc-payment-gateway-wcpay.php:1664
 #: dist/settings.js:1
 #: client/settings/advanced-settings/debug-mode.js:32
 msgid "Dev mode is active so logging is on by default."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2001
+#: includes/class-wc-payment-gateway-wcpay.php:2007
 msgid "Failed to update Stripe account. "
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2029
+#: includes/class-wc-payment-gateway-wcpay.php:2035
 msgid ""
 "Customer bank statement is invalid. Statement should be between 5 and 22 "
 "characters long, contain at least single Latin character and does not "
 "contain special characters: ' \" * &lt; &gt;"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2056
+#: includes/class-wc-payment-gateway-wcpay.php:2062
 msgid "Capture charge"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2057
+#: includes/class-wc-payment-gateway-wcpay.php:2063
 msgid "Cancel authorization"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2186
+#: includes/class-wc-payment-gateway-wcpay.php:2192
 #. translators: %1: error message
 msgid ""
 "Canceling authorization <strong>failed</strong> to complete with the "
 "following message: <code>%1$s</code>."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2201
+#: includes/class-wc-payment-gateway-wcpay.php:2207
 msgid "Canceling authorization <strong>failed</strong> to complete."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2320
-#: includes/class-wc-payment-gateway-wcpay.php:2333
-#: includes/class-wc-payment-gateway-wcpay.php:2350
+#: includes/class-wc-payment-gateway-wcpay.php:2326
+#: includes/class-wc-payment-gateway-wcpay.php:2339
+#: includes/class-wc-payment-gateway-wcpay.php:2356
 #: includes/payment-methods/class-upe-payment-gateway.php:623
 msgid "We're not able to process this payment. Please try again later."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2329
+#: includes/class-wc-payment-gateway-wcpay.php:2335
 #: includes/payment-methods/class-cc-payment-method.php:49
 #. translators: This will be used to indicate an unknown value for an ID.
 #: dist/index.js:1
@@ -800,7 +800,7 @@ msgstr ""
 msgid "unknown"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2416
+#: includes/class-wc-payment-gateway-wcpay.php:2422
 #. translators: %1: transaction ID of the payment or a translated string
 #. indicating an unknown ID.
 msgid ""
@@ -809,31 +809,31 @@ msgid ""
 "so it was ignored and the order was not updated."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2460
+#: includes/class-wc-payment-gateway-wcpay.php:2466
 msgid "A WooCommerce Payments payment method was not provided"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2472
+#: includes/class-wc-payment-gateway-wcpay.php:2478
 msgid "We're not able to add this payment method. Please try again later"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2481
+#: includes/class-wc-payment-gateway-wcpay.php:2487
 msgid "Failed to add the provided payment method. Please try again later"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2580
+#: includes/class-wc-payment-gateway-wcpay.php:2586
 #. translators: %s: the error message.
 msgid "Intent creation failed with the following message: %s"
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2621
+#: includes/class-wc-payment-gateway-wcpay.php:2627
 #: includes/payment-methods/class-upe-payment-gateway.php:341
 msgid ""
 "We're not able to add this payment method. Please refresh the page and try "
 "again."
 msgstr ""
 
-#: includes/class-wc-payment-gateway-wcpay.php:2814
+#: includes/class-wc-payment-gateway-wcpay.php:2820
 msgid ""
 "Next we’ll ask you to share a few details about your business to create "
 "your account."
@@ -1980,18 +1980,18 @@ msgstr ""
 msgid "Update and retry payment"
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:307
+#: includes/subscriptions/class-wc-payments-subscription-service.php:313
 #. Translators: %s Coupon code.
 msgid "Coupon - %s"
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:357
+#: includes/subscriptions/class-wc-payments-subscription-service.php:363
 msgid ""
 "There was a problem creating your subscription. Please try again or contact "
 "us for assistance."
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:388
+#: includes/subscriptions/class-wc-payments-subscription-service.php:394
 #. Translators: The %1 placeholder is a currency formatted price string
 #. ($0.50). The %2 and %3 placeholders are opening and closing strong HTML
 #. tags.
@@ -2000,21 +2000,21 @@ msgid ""
 "%2$sminimum recurring amount%3$s this payment method can process."
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:589
+#: includes/subscriptions/class-wc-payments-subscription-service.php:595
 msgid ""
 "We've successfully collected payment for your subscription using your new "
 "payment method."
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:646
+#: includes/subscriptions/class-wc-payments-subscription-service.php:652
 msgid "WooCommerce Payments Subscription ID"
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:667
+#: includes/subscriptions/class-wc-payments-subscription-service.php:673
 msgid "The subscription's next payment date has been updated to match WCPay server."
 msgstr ""
 
-#: includes/subscriptions/class-wc-payments-subscription-service.php:891
+#: includes/subscriptions/class-wc-payments-subscription-service.php:897
 #. Translators: %s Stripe subscription item ID.
 msgid "Unable to set subscription item ID meta for WCPay subscription item %s."
 msgstr ""
