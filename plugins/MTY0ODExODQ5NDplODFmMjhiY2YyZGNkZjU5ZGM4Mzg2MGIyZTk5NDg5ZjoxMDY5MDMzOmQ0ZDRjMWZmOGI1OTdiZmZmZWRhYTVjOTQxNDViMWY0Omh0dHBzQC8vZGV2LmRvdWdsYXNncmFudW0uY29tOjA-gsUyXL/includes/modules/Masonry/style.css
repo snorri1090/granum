@@ -1,9 +1,0 @@
-.dmpro_masonry_gallery,
-.dmpro_masonry_gallery .grid-item {
-    overflow: hidden !important;
-}
-
-.dmpro_masonry_gallery .grid-item img {
-  display: block;
-  max-width: 100%;
-}

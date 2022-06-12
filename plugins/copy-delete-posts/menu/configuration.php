@@ -167,7 +167,14 @@ function cdp_configuration() {
             </div>
             <select class="cdp-left cdp-profile-selected cdp-select-styled cdp-select cdp-select-padding cdp-ow-border cdp-f-s-19 cdp-color-p-i<?php echo ((!$areWePro)?' cdp-premium-in-select':''); ?>">
               <?php
-              $preSelProf = get_option('_cdp_preselections')[intval(get_current_user_id())];
+
+              $preSelProf = 0;
+              $gepres = get_option('_cdp_preselections', array());
+              
+              if (array_key_exists(get_current_user_id(), $gepres)) {
+                $preSelProf = $gepres[get_current_user_id()];
+              }
+
               if ($profiles != false && $areWePro) {
               foreach ($profiles as $profile => $vals):
                 $isSel = ($preSelProf == $profile);

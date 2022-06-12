@@ -115,6 +115,7 @@ function cdp_tooltip_content($profiles = array()) {
             <div class="cdp-left cdp-f-s-16"><?php _e('Use as basis settings', 'copy-delete-posts'); ?></div>
             <select class="cdp-left cdp-modal-select cdp-ow-border cdp-input-dynamic cdp-modal-input-profiles-r cdp-select cdp-m-l-9-d" name="tooltip-which-profile-second">
               <option value="custom" selected disabled><?php _e('–– Select ––', 'copy-delete-posts'); ?></option>
+              <option value="alloptions"><?php _e('Select all', 'copy-delete-posts'); ?></option>
               <option value="clear"><?php _e('Clean slate', 'copy-delete-posts'); ?></option>
               <optgroup label="<?php _e('–– Profiles ––', 'copy-delete-posts'); ?>"></optgroup>
               <option value="custom_named" disabled><?php _e('Custom', 'copy-delete-posts'); ?></option>

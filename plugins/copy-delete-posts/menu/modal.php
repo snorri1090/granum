@@ -51,8 +51,9 @@ function cdp_modal($screen = '', $profiles = array()) {
           <div class="cdp-cf cdp-inline" style="line-height: 40px">
               <div class="cdp-left cdp-f-s-16"><?php _e('Use as basis settings', 'copy-delete-posts'); ?></div>
             <?php $gepres = get_option('_cdp_preselections', array()); if (array_key_exists(get_current_user_id(), $gepres)) $preSelProf = $gepres[get_current_user_id()]; else $preSelProf = 0; ?>
-            <select class="cdp-left cdp-modal-select cdp-ow-border cdp-input-dynamic cdp-modal-input-profiles-r cdp-select cdp-m-l-9-d" name="tooltip-which-profile-second">
+            <select class="cdp-left cdp-modal-select cdp-ow-border cdp-input-dynamic cdp-modal-input-profiles-r cdp-select cdp-m-l-9-d" name="tooltip-which-profile-second-modal">
                 <option value="custom"<?php echo (array_key_exists($preSelProf, $profiles) && !$profiles[$preSelProf])?' selected':''?> disabled><?php _e('–– Select ––', 'copy-delete-posts'); ?></option>
+                <option value="alloptions"><?php _e('Select all', 'copy-delete-posts'); ?></option>
                 <option value="clear"><?php _e('Clean slate', 'copy-delete-posts'); ?></option>
                 <optgroup label="<?php _e('–– Profiles ––', 'copy-delete-posts'); ?>"></optgroup>
                 <option value="custom_named" disabled><?php _e('Custom', 'copy-delete-posts'); ?></option>
@@ -213,7 +214,7 @@ function cdp_modal($screen = '', $profiles = array()) {
             <div class="cdp-left" style="line-height: 40px;">&nbsp;to</div>
             <div class="cdp-left">
               <div class="cdp-inline cdp-tooltip-premium-spc-2 <?php echo (($isMulti != '')?' cdp-tooltip-premium-spc-3':' cdp-tooltip-premium-spc-4'); ?>">
-                <select class="cdp-input-dynamic cdp-modal-select cdp-modal-select-2 cdp-ow-border cdp-modal-input-site cdp-select cdp-m-l-9-d" name="tooltip-which-site-second" <?php echo $isMulti; ?>>
+                <select class="cdp-input-dynamic cdp-modal-select cdp-modal-select-2 cdp-ow-border cdp-modal-input-site cdp-select cdp-m-l-9-d" name="tooltip-which-site-second-modal" <?php echo $isMulti; ?>>
                   <option value="-1"><?php _e('this site', 'copy-delete-posts'); ?></option>
                   <?php if ($areWePro && function_exists('cdpp_get_sites')) echo cdpp_get_sites(true); ?>
                 </select>

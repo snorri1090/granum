@@ -4,7 +4,7 @@
  * Plugin Name: Copy & Delete Posts
  * Plugin URI: https://copy-delete-posts.com
  * Description: The best solution to easily make duplicates of your posts & pages, and delete them in one go.
- * Version: 1.2.9
+ * Version: 1.3.0
  * Author: Copy Delete Posts
  * Author URI: https://copy-delete-posts.com/
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -30,7 +30,7 @@ analyst_init(array(
  * @since 1.0.0
  */
 // Plugin constants
-define('CDP_VERSION', '1.2.9');
+define('CDP_VERSION', '1.3.0');
 define('CDP_WP_VERSION', get_bloginfo('version'));
 define('CDP_SCRIPT_DEBUG', false);
 define('CDP_ROOT_DIR', __DIR__);
@@ -394,7 +394,7 @@ add_filter('post_row_actions', function ($actions, $post) {
  */
 add_filter('page_row_actions', function ($actions, $page) {
     if (cdp_check_permissions(wp_get_current_user()) == false)
-        return;
+        return $actions;
 
     // Get global options and post type
     $g = get_option('_cdp_globals', array());
@@ -574,56 +574,59 @@ add_action('wp_footer', function () {
  * Add prepared HTML for tooltips and other info.
  * @since 1.0.0
  */
-add_action('admin_notices', function () {
-    if (cdp_check_permissions(wp_get_current_user()) == false)
-        return;
+add_action('admin_init', function () {
+  add_action('admin_notices', function () {
+      if (cdp_check_permissions(wp_get_current_user()) == false)
+          return;
 
-    global $post, $cdp_plug_url, $cdp_globals, $pagenow;
-    $post_id = false;
-    $hasParent = false;
-    $screen = get_current_screen();
-    $profiles = get_option('_cdp_profiles');
-    $deny = ['edit-page', 'edit-post'];
-    $hx = false;
+      global $post, $cdp_plug_url, $cdp_globals, $pagenow;
+      $post_id = false;
+      $hasParent = false;
+      $screen = get_current_screen();
+      $profiles = get_option('_cdp_profiles', array());
+      $deny = ['edit-page', 'edit-post'];
+      $hx = false;
 
-    if (!in_array($screen->id, $deny)) {
-        if (isset($post->ID)) {
-            $post_id = $post->ID;
-            $meta = get_post_meta($post->ID, '_cdp_origin');
-            $site = get_post_meta($post->ID, '_cdp_origin_site');
-            if ($cdp_globals && array_key_exists('others', $cdp_globals) && array_key_exists('cdp-references-post', $cdp_globals['others'])) {
-                if ($cdp_globals['others']['cdp-references-edit'] == 'true') {
-                    if (function_exists('switch_to_blog') && $site)
-                        switch_to_blog($site);
-                    if (array_key_exists(0, $meta) && get_post_status($meta[0])) {
-                        $parentTitle = get_the_title($meta[0]);
-                        $link = get_post_permalink($meta[0]);
-                        $hasParent = array(
-                            'title' => $parentTitle,
-                            'link' => $link
-                        );
-                    }
-                    if (function_exists('restore_current_blog') && $site)
-                        restore_current_blog();
-                }
-            }
-        }
-    }
-    if ($cdp_globals && array_key_exists('others', $cdp_globals) && array_key_exists('cdp-premium-hide-tooltip', $cdp_globals['others']) && $cdp_globals['others']['cdp-premium-hide-tooltip'] == 'true') {
-        $hx = true;
-    }
+      if (!in_array($screen->id, $deny)) {
+          if (isset($post->ID)) {
+              $post_id = $post->ID;
+              $meta = get_post_meta($post->ID, '_cdp_origin');
+              $site = get_post_meta($post->ID, '_cdp_origin_site');
+              if ($cdp_globals && array_key_exists('others', $cdp_globals) && array_key_exists('cdp-references-post', $cdp_globals['others'])) {
+                  if ($cdp_globals['others']['cdp-references-edit'] == 'true') {
+                      if (function_exists('switch_to_blog') && $site)
+                          switch_to_blog($site);
+                      if (array_key_exists(0, $meta) && get_post_status($meta[0])) {
+                          $parentTitle = get_the_title($meta[0]);
+                          $link = get_post_permalink($meta[0]);
+                          $hasParent = array(
+                              'title' => $parentTitle,
+                              'link' => $link
+                          );
+                      }
+                      if (function_exists('restore_current_blog') && $site)
+                          restore_current_blog();
+                  }
+              }
+          }
+      }
+      if ($cdp_globals && array_key_exists('others', $cdp_globals) && array_key_exists('cdp-premium-hide-tooltip', $cdp_globals['others']) && $cdp_globals['others']['cdp-premium-hide-tooltip'] == 'true') {
+          $hx = true;
+      }
 
-    if (get_option('_cdp_show_copy', false)) {
-        echo '<span style="display: none; visibility: hidden;" id="cdp-show-copy-banner" data-value="true"></span>';
-        delete_option('_cdp_show_copy');
-    }
+      if (get_option('_cdp_show_copy', false)) {
+          echo '<span style="display: none; visibility: hidden;" id="cdp-show-copy-banner" data-value="true"></span>';
+          delete_option('_cdp_show_copy');
+      }
 
-    if ($pagenow == 'edit.php')
-        $post_id = false;
-    cdp_vars($hx, $cdp_plug_url, $post_id, $hasParent, true);
-    cdp_tooltip_content($profiles);
-    cdp_modal($screen, $profiles);
-});
+      if ($pagenow == 'edit.php')
+          $post_id = false;
+
+      cdp_vars($hx, $cdp_plug_url, $post_id, $hasParent, true);
+      cdp_tooltip_content($profiles);
+      cdp_modal($screen, $profiles);
+  });
+}, 10000);
 /** –– * */
 /** –– **\
  * Add button in standard editor.
@@ -1062,7 +1065,7 @@ function cdp_sanitize_array($data = null) {
     else if (is_null($data))
         return 'false';
     else {
-        error_log('Copy & Delete Posts[copy-delete-posts.php:707]: Unknown AJaX datatype – ' . gettype($data));
+        error_log('Copy & Delete Posts[copy-delete-posts.php:1068]: Unknown AJaX datatype – ' . gettype($data));
         echo 'error – invalid data';
         wp_die();
     }
