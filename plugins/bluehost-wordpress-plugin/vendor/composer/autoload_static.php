@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb
+class ComposerStaticInit10d53f681fff0b354e0bf7cb191275a5
 {
     public static $files = array (
         'b62570ec8ed5d9ce1990d98269e51fa3' => __DIR__ . '/..' . '/endurance/wp-module-data/bootstrap.php',
@@ -240,10 +240,10 @@ class ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit10d53f681fff0b354e0bf7cb191275a5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit10d53f681fff0b354e0bf7cb191275a5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit10d53f681fff0b354e0bf7cb191275a5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit10d53f681fff0b354e0bf7cb191275a5::$classMap;
 
         }, null, ClassLoader::class);
     }

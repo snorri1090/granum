@@ -25,8 +25,16 @@ class Multibrand {
 			return array(
 				'id' => 'hostgator',
 				'name' => 'HostGator',
-				'slug' => 'hostgator-wordpress-plugin/hostgator-wordpress-plugin.php',
+				'slug' => 'wp-plugin-hostgator/wp-plugin-hostgator.php',
 				'version' => HOSTGATOR_PLUGIN_VERSION,
+			);
+		}
+		if ( defined( 'WEB_PLUGIN_VERSION' ) ) {
+			return array(
+				'id' => 'web',
+				'name' => 'Web.com',
+				'slug' => 'wp-plugin-web/wp-plugin-web.php',
+				'version' => WEB_PLUGIN_VERSION,
 			);
 		}
 		if ( defined( 'MM_VERSION' ) ) {
